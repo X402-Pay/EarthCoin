@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EarthCoin - 占领地球币 🌍</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+    <script src="https://unpkg.com/globe.gl"></script>
+    <script src="https://unpkg.com/@solana/web3.js@latest/lib/index.iife.min.js"></script>
+</head>
+<body>
+    <div id="app">
+        <!-- 右上角钱包图标 -->
+        <button id="walletBtn" class="wallet-btn">Wallet</button>
+        <div id="walletStatus" class="wallet-status"></div>
+
+        <!-- 3D 地球容器 -->
+        <div id="globeContainer"></div>
+
+        <!-- 聊天框（小方框） -->
+        <div id="chatBox" class="chat-box">
+            <div id="messages" class="messages"></div>
+            <div class="chat-input">
+                <input type="text" id="messageInput" placeholder="说点啥..." />
+                <button id="sendBtn">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
